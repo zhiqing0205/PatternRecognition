@@ -1,0 +1,164 @@
+/* MathJax 公式显示优化 - 完全重写 */
+
+/* 彻底禁用 MathJax 容器的滚动 */
+mjx-container[display="true"] {
+  overflow: visible !important;
+  display: block !important;
+  text-align: center !important;
+  margin: 1em 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* 强制移除所有滚动条和固定尺寸 */
+mjx-container[display="true"] mjx-math {
+  display: inline-block !important;
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  overflow: visible !important;
+  vertical-align: middle !important;
+}
+
+/* 修复 MathJax SVG 输出 */
+mjx-container[display="true"] svg {
+  overflow: visible !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* 彻底禁用旧版 MathJax 的滚动 */
+.MathJax_Display {
+  overflow: visible !important;
+  text-align: center !important;
+  margin: 1em 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+}
+
+/* VitePress 文档容器优化 */
+.vp-doc mjx-container[display="true"] {
+  margin: 1.5em auto !important;
+  clear: both !important;
+}
+
+/* 行内公式保持不变 */
+mjx-container[display="false"] {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+/* 强制移除所有可能的滚动容器 */
+.vp-doc {
+  overflow-x: visible !important;
+}
+
+.vp-doc .content {
+  overflow-x: visible !important;
+}
+
+/* 移除段落的滚动限制 */
+.vp-doc p {
+  overflow: visible !important;
+  width: auto !important;
+  max-width: 100% !important;
+}
+
+/* 移动设备优化 */
+@media (max-width: 768px) {
+  mjx-container[display="true"] {
+    font-size: 0.85em !important;
+  }
+  
+  mjx-container[display="true"] mjx-math {
+    transform: scale(0.9) !important;
+    transform-origin: center !important;
+  }
+}
+
+/* 强制重置所有可能的 MathJax 样式 */
+mjx-container[display="true"],
+mjx-container[display="true"] * {
+  box-sizing: content-box !important;
+  overflow: visible !important;
+}
+
+/* 确保没有固定宽度限制 */
+.vp-doc mjx-container[display="true"] mjx-math,
+.vp-doc .MathJax_Display {
+  white-space: nowrap !important;
+  overflow: visible !important;
+}
+
+/* 终极修复 - 使用 JavaScript 注入的样式无法覆盖时的备选方案 */
+mjx-container[display="true"]:before {
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+mjx-container[display="true"]:after {
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+/* 仅对 MathJax 容器禁用滚动条 */
+mjx-container[display="true"] {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+mjx-container[display="true"]::-webkit-scrollbar {
+  display: none !important;
+}
+
+mjx-container[display="true"] mjx-math {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+mjx-container[display="true"] mjx-math::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* 针对 MathJax 容器的特殊处理 */
+mjx-container[display="true"],
+mjx-container[display="true"] *,
+.MathJax_Display,
+.MathJax_Display * {
+  overflow: visible !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
+
+/* 移除可能的固定定位 */
+mjx-container[display="true"] {
+  position: static !important;
+  transform: none !important;
+}
+
+/* 确保父容器不会限制公式显示 */
+.vp-doc div:has(mjx-container[display="true"]) {
+  overflow: visible !important;
+  width: auto !important;
+  max-width: 100% !important;
+}
