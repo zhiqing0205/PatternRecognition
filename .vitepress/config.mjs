@@ -2,9 +2,10 @@ import { defineConfig } from 'vitepress'
 import mathjax3 from 'markdown-it-mathjax3'
 
 export default defineConfig({
+  outDir: process.env.VITE_BUILD_OUTDIR || '.vitepress/dist',
   title: '模式识别',
   description: '模式识别课程学习笔记',
-  base: '/',
+  base: '/',  
   
   themeConfig: {
     nav: [
