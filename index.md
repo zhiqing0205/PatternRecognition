@@ -4,21 +4,43 @@ layout: home
 hero:
   name: "模式识别"
   text: "Pattern Recognition"
-  tagline: "模式识别课程学习笔记与知识体系"
+  tagline: "模式识别课程学习笔记"
+  image:
+    src: /logo.png
+    alt: 模式识别
   actions:
     - theme: brand
-      text: "开始学习"
+      text: "🚀 开始学习"
       link: /docs/chapters/chapter01
     - theme: alt
-      text: "查看所有章节"
-      link: /docs/chapters/chapter01
+      text: "🧮 数学基础"
+      link: /docs/chapters/appendix-math
 
 features:
-  - title: 📚 系统性学习
-    details: 从绪论到特征选择，涵盖模式识别的核心理论与方法
-  - title: 🧠 理论与实践
-    details: 贝叶斯分类器、支持向量机、神经网络等经典算法详解
-  - title: 🔍 深入理解
-    details: 监督学习、无监督学习、聚类分析等概念清晰阐述
+  - icon: 📊
+    title: 最大似然估计和贝叶斯参数估计
+    details: 参数估计的核心理论，包括多变量高斯分布的MLE推导和偏差分析
+    link: /docs/chapters/chapter03
+  - icon: ⚡
+    title: 线性判别函数
+    details: 线性分类器的理论基础，包括感知器算法和线性判别分析
+    link: /docs/chapters/chapter05
+  - icon: 🤖
+    title: 独立于算法的机器学习
+    details: 学习理论基础，VC维、PAC学习和模型选择策略
+    link: /docs/chapters/chapter09
 ---
+
+<div class="home-content">
+
+<div class="cta-section">
+  <h3>🚀 开始你的模式识别学习之旅</h3>
+  <p>掌握模式识别的理论基础，包括贝叶斯估计、最大似然估计、线性判别函数等。</p>
+  <div class="cta-buttons">
+    <a href="/docs/chapters/chapter01" class="cta-button primary">立即开始学习</a>
+    <a href="/docs/chapters/appendix-math" class="cta-button secondary">复习数学基础</a>
+  </div>
+</div>
+
+</div>
 

@@ -10,7 +10,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '章节目录', link: '/docs/chapters/chapter01' },
+      { text: '章节学习', link: '/docs/chapters/chapter01' },
       { text: '数学基础', link: '/docs/chapters/appendix-math' }
     ],
 
