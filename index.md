@@ -6,7 +6,7 @@ hero:
   text: "Pattern Recognition"
   tagline: "模式识别课程学习笔记"
   image:
-    src: /logo.png
+    src: logo.png
     alt: 模式识别
   actions:
     - theme: brand
