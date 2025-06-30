@@ -60,7 +60,7 @@ export default defineConfig({
   head: [
     [
       'script',
-      { id: 'MathJax-script', async: true, src: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' }
+      { id: 'MathJax-script', async: true, src: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js' }
     ],
     [
       'script',
@@ -76,11 +76,12 @@ export default defineConfig({
         options: {
           skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
         },
-        chtml: {
+        svg: {
           scale: 1,
           displayAlign: 'center',
           displayIndent: '0',
-          fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2'
+          fontCache: 'local',
+          internalSpeechTitles: true
         },
         startup: {
           ready: () => {
@@ -93,7 +94,7 @@ export default defineConfig({
                 width: auto !important;
                 max-width: none !important;
               }
-              mjx-container[display="true"] mjx-math {
+              mjx-container[display="true"] svg {
                 overflow: visible !important;
                 width: auto !important;
                 max-width: none !important;
