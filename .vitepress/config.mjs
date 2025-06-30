@@ -5,34 +5,34 @@ export default defineConfig({
   outDir: process.env.VITE_BUILD_OUTDIR || '.vitepress/dist',
   title: '模式识别',
   description: '模式识别课程学习笔记',
-  base: '/',  
+  base: '/', 
   
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '章节目录', link: '/chapters/chapter01' },
-      { text: '数学基础', link: '/chapters/appendix-math' }
+      { text: '章节目录', link: '/docs/chapters/chapter01' },
+      { text: '数学基础', link: '/docs/chapters/appendix-math' }
     ],
 
     sidebar: {
-      '/chapters/': [
+      '/docs/chapters/': [
         {
           text: '章节目录',
           items: [
-            { text: '第1章 绪论', link: '/chapters/chapter01' },
-            { text: '第2章 贝叶斯决策论', link: '/chapters/chapter02' },
-            { text: '第3章 最大似然估计和贝叶斯参数估计', link: '/chapters/chapter03' },
-            { text: '第4章 非参数技术', link: '/chapters/chapter04' },
-            { text: '第5章 线性判别函数', link: '/chapters/chapter05' },
-            { text: '第8章 非度量方法', link: '/chapters/chapter08' },
-            { text: '第9章 独立于算法的机器学习', link: '/chapters/chapter09' },
-            { text: '第10章 无监督学习与聚类', link: '/chapters/chapter10' }
+            { text: '第1章 绪论', link: '/docs/chapters/chapter01' },
+            { text: '第2章 贝叶斯决策论', link: '/docs/chapters/chapter02' },
+            { text: '第3章 最大似然估计和贝叶斯参数估计(重点)', link: '/docs/chapters/chapter03' },
+            { text: '第4章 非参数技术', link: '/docs/chapters/chapter04' },
+            { text: '第5章 线性判别函数(重点)', link: '/docs/chapters/chapter05' },
+            { text: '第8章 非度量方法', link: '/docs/chapters/chapter08' },
+            { text: '第9章 独立于算法的机器学习(重点)', link: '/docs/chapters/chapter09' },
+            { text: '第10章 无监督学习与聚类', link: '/docs/chapters/chapter10' }
           ]
         },
         {
           text: '附录',
           items: [
-            { text: '数学基础', link: '/chapters/appendix-math' }
+            { text: '数学基础', link: '/docs/chapters/appendix-math' }
           ]
         }
       ]
