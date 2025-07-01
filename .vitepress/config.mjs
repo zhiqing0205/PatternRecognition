@@ -19,14 +19,14 @@ export default defineConfig({
         {
           text: '章节目录',
           items: [
-            { text: '第1章 绪论', link: '/docs/chapters/chapter01' },
-            { text: '第2章 贝叶斯决策论', link: '/docs/chapters/chapter02' },
-            { text: '第3章 最大似然估计和贝叶斯参数估计(重点)', link: '/docs/chapters/chapter03' },
-            { text: '第4章 非参数技术', link: '/docs/chapters/chapter04' },
-            { text: '第5章 线性判别函数(重点)', link: '/docs/chapters/chapter05' },
-            { text: '第8章 非度量方法', link: '/docs/chapters/chapter08' },
-            { text: '第9章 独立于算法的机器学习(重点)', link: '/docs/chapters/chapter09' },
-            { text: '第10章 无监督学习与聚类', link: '/docs/chapters/chapter10' }
+            { text: '绪论', link: '/docs/chapters/chapter01' },
+            { text: '贝叶斯决策论', link: '/docs/chapters/chapter02' },
+            { text: '最大似然估计和贝叶斯参数估计(重点)', link: '/docs/chapters/chapter03' },
+            { text: '非参数技术', link: '/docs/chapters/chapter04' },
+            { text: '线性判别函数(重点)', link: '/docs/chapters/chapter05' },
+            { text: '非度量方法', link: '/docs/chapters/chapter08' },
+            { text: '独立于算法的机器学习(重点)', link: '/docs/chapters/chapter09' },
+            { text: '无监督学习与聚类', link: '/docs/chapters/chapter10' }
           ]
         },
         {
