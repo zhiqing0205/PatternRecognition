@@ -405,6 +405,7 @@ mjx-container[display="true"]::-webkit-scrollbar {
 .cta-button.primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(var(--vp-c-brand-1), 0.4);
+  color: white !important;
 }
 
 .cta-button.secondary {
