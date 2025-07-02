@@ -54,6 +54,11 @@ export default defineConfig({
     outline: {
       level: [2, 3],
       label: '页面导航'
+    },
+
+    editLink: {
+      pattern: 'https://github.com/zhiqing0205/PatternRecognition/edit/master/:path',
+      text: '在 GitHub 上编辑此页'
     }
   },
 
