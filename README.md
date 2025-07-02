@@ -2,6 +2,10 @@
 
 这是一个基于 VitePress 构建的模式识别课程学习笔记网站。
 
+## 预览
+
+![网站预览](public/preview.png)
+
 ## 项目介绍
 
 本项目包含了模式识别课程的各章节学习笔记，涵盖以下内容：
@@ -37,6 +41,21 @@ PatternRecognition/
 ```
 
 ## 开发环境
+
+### 环境配置
+
+本项目使用 `.env` 文件进行环境配置：
+
+1. 复制环境配置模板：
+```bash
+cp .env.example .env
+```
+
+2. 根据需要修改 `.env` 文件中的配置：
+```bash
+# VitePress 构建配置
+VITE_BUILD_OUTDIR=../dist
+```
 
 ### 安装依赖
 
