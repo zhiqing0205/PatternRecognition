@@ -420,8 +420,6 @@ mjx-container[display="true"]::-webkit-scrollbar {
 }
 
 .cta-button.secondary:hover {
-  background: var(--vp-c-brand-1);
-  color: white;
   transform: translateY(-3px);
 }
 
